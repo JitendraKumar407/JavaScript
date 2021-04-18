@@ -1,0 +1,33 @@
+import React,{ component } from 'react';
+import, { render } from 'react-dom';
+import Demo1 from './Demo';
+class App extends React.component{
+    construtor(){
+        super();
+        this.state={
+            students:[
+            {
+                id:123
+                name:'rohan'
+            },
+            {
+                id:456
+                name:'jitendra'
+            },
+            {
+                if:878
+                name:'rey'
+            }
+            ]
+        };
+    }
+}
+render(){
+    return (
+        <div>
+        <Demo1 students={this.state.students}/>
+        </div>
+    );
+}
+}
+render(<App />,document.getElementById('root'))
